@@ -1,0 +1,74 @@
+.mail__section {
+    background-color: var(--yellow);
+    position: relative;
+    z-index: 1;
+    padding-bottom: 156px;
+}
+
+.mail__title {
+    max-width: 966px;
+    margin: 0 auto;
+    padding-top: 141px;
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 70px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #fffcf8;
+}
+
+.mail__desc {
+    max-width: 1010px;
+    margin: 0 auto;
+    padding-top: 37px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #fffcf8;
+}
+
+.white__board {
+    margin: 0 auto;
+    width: 574px;
+    height: 87px;
+    margin-top: 49px;
+    border-radius: 10px; 
+    background-color: #f9f9f9;
+    position: relative;
+    z-index: 2;
+}
+
+.mail__btn__field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.mail__field {
+    width: 169px;
+    height: 25px;
+    margin-left: 27px;
+}
+
+.mail__btn {
+    margin: 10px 10px 10px;
+    padding: 17px 35px 15px 38px;
+    color: white;
+    background-color: black !important;
+    border-radius: 8px !important;
+    font-size: 33px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+.mail__btn:hover {
+    background-color: #333 !important; /* Немного светлее при наведении */
+}
+
+.mail__btn:active {
+    background-color: #555 !important; /* Еще светлее при нажатии */
+}

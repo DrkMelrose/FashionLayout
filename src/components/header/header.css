@@ -1,0 +1,129 @@
+.header {
+    padding: 46px 0 56px;
+}
+
+.header__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+}
+
+.header__logo span {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.header__nav {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.01em;
+}
+
+.header__nav ul {
+    display: flex;
+    column-gap: 65px;
+    align-items: center;
+}
+
+.header__nav a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+.header__nav-btn, a.header__nav-btn {
+    padding: 13px 22px 17px;
+    background-color: #000;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    color: white;
+}
+
+.header__nav-btn:hover {
+    background-color: #333 !important; /* Немного светлее при наведении */
+}
+
+.header__nav-btn:active {
+    background-color: #555 !important; /* Еще светлее при нажатии */
+}
+
+.burger-menu {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .header__nav ul {
+        column-gap: 30px; /* Уменьшаем расстояние между элементами меню */
+    }
+
+    .header__nav-btn {
+        font-size: 20px; /* Уменьшаем размер текста кнопки */
+        padding: 10px 20px; /* Уменьшаем отступы */
+    }
+}
+
+/* Смартфоны и меньшие экраны */
+@media (max-width: 768px) {
+    .header {
+        padding: 20px 0; /* Уменьшаем отступы в шапке */
+    }
+
+    .header__row {
+        justify-content: space-between; /* Размещаем элементы в колонку */
+        align-items: center;
+    }
+
+    .header__logo span {
+        font-size: 30px; /* Уменьшаем размер логотипа */
+        line-height: 40px;
+    }
+
+    .header__nav ul {
+        flex-direction: column; /* Размещаем меню в колонку */
+        row-gap: 15px; /* Добавляем вертикальные отступы между элементами меню */
+        column-gap: 0; /* Убираем горизонтальные отступы */
+    }
+
+    .header__nav {
+        margin-top: 20px; /* Добавляем отступ сверху для меню */
+        font-size: 18px; /* Уменьшаем размер текста меню */
+    }
+
+    .header__nav-btn {
+        font-size: 20px; /* Уменьшаем размер текста кнопки */
+        padding: 10px 20px; /* Уменьшаем отступы */
+    }
+
+    /* Показываем бургер-меню на мобильных устройствах */
+    .burger-menu {
+        display: block;
+    }
+
+    /* Скрываем навигацию по умолчанию на мобильных устройствах */
+    .header__nav {
+        display: none;
+    }
+
+    /* Показываем навигацию, когда меню открыто */
+    .header__nav.open {
+        display: block;
+    }
+}

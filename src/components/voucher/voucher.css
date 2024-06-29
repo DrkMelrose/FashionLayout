@@ -1,0 +1,41 @@
+.voucher {
+    margin-top: 221px;
+    /* max-width: 1483px; */
+}
+
+.voucher__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.voucher__text {
+    max-width: 507px;
+}
+
+.voucher__title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 72px;
+    letter-spacing: 0.06em;
+    text-align: left;
+}
+
+.voucher__desc {
+    margin-top: 41px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: #7c7c7c;
+}
+
+.voucher__btn1__img, .voucher__btn2__img{
+    margin-top: 65px;
+}
+
+.voucher__buttons {
+    display: flex;
+    column-gap: 19px;
+}

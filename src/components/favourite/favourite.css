@@ -1,0 +1,13 @@
+.favourite {
+    margin-top: 190px;
+}
+
+.title-2 {
+    text-transform: capitalize;
+}
+
+.favourite__cards {
+    margin-top: 118px;
+    display: flex;
+    justify-content: space-between;
+}
